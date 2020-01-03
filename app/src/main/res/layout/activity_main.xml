@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="horizontal"
+    android:id="@+id/lay"
+    tools:context="MainActivity">
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="S.no"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_id"
+        android:hint="Name" />
+
+    <AutoCompleteTextView
+        android:id="@+id/av"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_name"
+        android:hint="School" />
+
+    <EditText
+        android:id="@+id/editText_CC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/av"
+        android:hint="Course Count"
+        android:layout_marginBottom="20dp"
+        android:inputType="number" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText_school"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/editText_email"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:hint="School"-->
+<!--        android:inputType="text"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textColorHint="#EAF0F1" />-->
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_CC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/addbutton"
+        android:text="Add Data"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/viewbutton"
+        android:text="View"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/updatebutton"
+        android:text="Update"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/dlt"
+        android:text="Delete"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_delete"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginRight="209dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/viewall"
+        android:text="View All"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button_deleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_delete"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/dall"
+        android:text="Delete All"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/enrollment"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/av"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Enrollment No"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/av"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Course Name"
+        android:inputType="text"
+      />
+
+
+</RelativeLayout>
